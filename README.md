@@ -108,13 +108,6 @@ Este archivo exportado desde Postman contiene:
 * **Productos** → CRUD de productos, búsqueda, control de stock bajo.
 * **Ventas** → Registro de ventas, top 5, búsqueda por fecha.
 
-#### 🔹 Variables preconfiguradas
-
-* `{{baseUrl}}`: URL base de la API (por defecto `http://localhost:8080`)
-* `{{accessToken}}`: Token JWT que se actualiza automáticamente tras iniciar sesión o a veces se debe de actualizar manualmente copiando y pegando.
-* `{{refreshTokenId}}`: Id del Token 
-* `{{refreshToken}}`: Token para renovar el `accessToken`
-
 ## 🔑 Endpoints Principales
 
 ### 🔐 Autenticación
