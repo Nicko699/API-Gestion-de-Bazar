@@ -175,5 +175,3 @@ Eres libre de usarlo y modificarlo mencionando la autoría correspondiente.
 ## 👨‍💻 Autor
 
 Desarrollado por **Nicolás Muñoz Díaz** 
-
----
