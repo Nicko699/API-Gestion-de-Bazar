@@ -1,0 +1,338 @@
+{
+	"info": {
+		"_postman_id": "6d5f9d54-7893-4685-bdcb-e7ed31941cbe",
+		"name": "Api_E-comerce",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "39552121"
+	},
+	"item": [
+		{
+			"name": "Usuario",
+			"item": [
+				{
+					"name": "CrearUsuario",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": "http://localhost:8080/usuario/crearCuenta"
+					},
+					"response": []
+				},
+				{
+					"name": "iniciarSesion",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"email\": \"nicomunozd.19@gmail.com\",\r\n  \"password\": \"n\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/usuario/iniciarSesion"
+					},
+					"response": []
+				},
+				{
+					"name": "obtenerUsuarioCorreoAdmin",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/usuario/admin/obtenerUsuario/{email}\""
+					},
+					"response": []
+				},
+				{
+					"name": "obtenerTodosUsuarios o activo- inactivo Admin",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "EditarUsuarioAdmin",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/usuario/editarUsuario"
+					},
+					"response": []
+				},
+				{
+					"name": "desactivarUsuarioAdmin",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": "http://localhost:8080/usuario/user/eliminarUsuario"
+					},
+					"response": []
+				},
+				{
+					"name": "ReactivarCuentaAdmin",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": "http://localhost:8080/usuario/admin/reactivarCuenta"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "RefreshToken",
+			"item": [
+				{
+					"name": "RenovarToken",
+					"request": {
+						"method": "POST",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Producto",
+			"item": [
+				{
+					"name": "CrearProductoAdmin",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": "http://localhost:8080/producto/crearProducto"
+					},
+					"response": []
+				},
+				{
+					"name": "ObtenerProductoAdmin",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/producto/admin/obtenerProducto/{id}"
+					},
+					"response": []
+				},
+				{
+					"name": "ObtenerProductosAdmin",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "ObtenerProductoUser",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "ObtenerProductosUser",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "editarProductoAdmin",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJsYXVyYS5jYXN0YW5vQGV4YW1wbGUuY29tIiwicm9sZXMiOlsiUk9MRV9VU0VSIiwiRkFDVE9SX1BBU1NXT1JEIl0sImlhdCI6MTc2NzM2Njk0MiwiZXhwIjoxNzY3MzY4NzQyfQ.sCk-J3V5BbdN1eW9ToVgsrFTFe8mk4LalJrCqV4kDhk"
+							}
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \r\n \r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/producto/admin/editarProducto/1"
+					},
+					"response": []
+				},
+				{
+					"name": "DesactivarProductoAdmin",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJsYXVyYS5jYXN0YW5vQGV4YW1wbGUuY29tIiwicm9sZXMiOlsiUk9MRV9VU0VSIiwiRkFDVE9SX1BBU1NXT1JEIl0sImlhdCI6MTc2NzM2Njk0MiwiZXhwIjoxNzY3MzY4NzQyfQ.sCk-J3V5BbdN1eW9ToVgsrFTFe8mk4LalJrCqV4kDhk"
+							}
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \r\n \r\n}\r\n"
+						},
+						"url": "http://localhost:8080/producto/admin/desactivarProducto/"
+					},
+					"response": []
+				},
+				{
+					"name": "eliminarProductoAdmin",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "http://localhost:8080/producto/admin/eliminarProducto/8"
+					},
+					"response": []
+				},
+				{
+					"name": "ObtenerProductosCantMenor5Admin",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Venta",
+			"item": [
+				{
+					"name": "Crearventa User/Admin",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJsYXVyYS5jYXN0YW5vQGV4YW1wbGUuY29tIiwicm9sZXMiOlsiUk9MRV9VU0VSIiwiRkFDVE9SX1BBU1NXT1JEIl0sImlhdCI6MTc2NzQ0OTA4NSwiZXhwIjoxNzY3NDUwODg1fQ.cObMC2I1p3WF1aWjhcm6sf7xgqqcpW2vY_JuQzmOM7w"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"listadetalleVentas\": [\r\n   \r\n    {\r\n      \"productoId\": 4,\r\n      \"cantidad\": 3\r\n    },\r\n    {\r\n      \"productoId\": 5,\r\n      \"cantidad\": 6\r\n    }\r\n  ]\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/venta/crearVenta"
+					},
+					"response": []
+				},
+				{
+					"name": "ObtenerVentaAdmin",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/venta/admin/obtenerVenta/1"
+					},
+					"response": []
+				},
+				{
+					"name": "ObtenerVentasAdmin",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "ObtenerVentaUser",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "ObtenerVentasUser",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/user/obtenerVentas"
+					},
+					"response": []
+				},
+				{
+					"name": "ObtenerProductosPorVentaAdmin",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "ObtenerVentasPorFechaAdmin",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "obtenerTo5MayorVentaAdmin",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "eliminarVentaAdmin",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "http://localhost:8080/venta/admin/eliminarVenta/"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "ResetToken",
+			"item": [
+				{
+					"name": "recuperarPassword",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": "http://localhost:8080/resetToken/recuperarPassword"
+					},
+					"response": []
+				},
+				{
+					"name": "ReestablecerPassword",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": "http://localhost:8080/resetToken/recuperarPassword"
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
