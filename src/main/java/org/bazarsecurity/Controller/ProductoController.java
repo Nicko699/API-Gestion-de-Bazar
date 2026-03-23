@@ -19,7 +19,7 @@ import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 import java.net.URI;
 import java.util.HashMap;
 import java.util.Map;
-// Controlador REST para la gestión de productos
+// Controlador REST para la gestión de productos en la Api
 @RestController
 @RequestMapping("/producto")
 public class ProductoController {
